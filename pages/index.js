@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { Banner } from '../components/Banner';
+import { Nosotros } from '../components/Nosotros';
+import { Services } from '../components/Services';
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Banner />
+      <Nosotros />
+      <Services />
     </div>
   );
 }

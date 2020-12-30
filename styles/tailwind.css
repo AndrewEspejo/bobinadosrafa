@@ -27,3 +27,12 @@
   left: 0;
   background: rgba(0, 0, 0, 0.65);
 }
+
+.big-image2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+}
