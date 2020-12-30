@@ -16,7 +16,7 @@
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
 }
 
 .overlay {
@@ -26,20 +26,4 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.65);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.overlay h1 {
-  font-size: 65px;
-  letter-spacing: 0px;
-  margin: 0 0 5px;
-}
-
-.overlay p {
-  margin: 0;
-  font-size: 28px;
 }
