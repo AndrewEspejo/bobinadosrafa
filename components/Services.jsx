@@ -13,10 +13,10 @@ export const Services = () => {
     obtainServices();
   }, []);
   return (
-    <div className='body'>
+    <div className='body '>
       <div className='big-image3'>
         <div
-          className='absolute mx-auto h-full flex flex-col justify-between w-full  pl-5 pr-8'
+          className='absolute mx-auto h-screen flex flex-col justify-between w-full  pl-5 pr-8'
           style={{ background: 'rgba(0, 0, 0, 0.65)' }}
         >
           <div>
@@ -24,22 +24,26 @@ export const Services = () => {
               Servicios
             </h1>
           </div>
-          <div className='grid grid-cols-3 gap-4 place-items-center flex-grow'>
+          <div className='grid lg:grid-cols-3 grid-cols-1 md:gap-4 place-items-center flex-grow pb-3'>
             {services ? (
               services.map((option) => (
                 <div
-                  className='flex flex-col items-center  bg-white text-gray-800 h-3/4 w-3/4 rounded-lg'
+                  className='flex md:flex-col flex-row items-center  bg-white text-gray-800 h-48 md:h-3/4 md:w-3/4 w-11/12 rounded-lg'
                   key={option.id}
                 >
                   <img
                     src={option.image[0].name}
                     alt=''
-                    className='w-full h-72 bg-center rounded-md'
+                    className='md:w-full md:h-72 h-full w-36 bg-center rounded-md'
                   />
                   <div className='pt-10 h-64 text-center'>
-                    <h1 className='pb-10 text-xl font-bold'>{option.title}</h1>
+                    <h1 className='md:pb-10 text-xl font-bold'>
+                      {option.title}
+                    </h1>
                     <ul>
-                      <li className='text-md'>{option.descripcion}</li>
+                      <li className='md:text-md text-xs'>
+                        {option.descripcion}
+                      </li>
                     </ul>
                   </div>
                 </div>
