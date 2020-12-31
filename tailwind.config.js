@@ -11,6 +11,8 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
+      iphone6: '375px',
+      iphone8p: '411px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

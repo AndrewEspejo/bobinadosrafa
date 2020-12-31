@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 
 export const Contact = () => {
   return (
-    <div className='body'>
+    <div className='body' id='contact'>
       <div className='big-image4'>
         <div
           className='absolute mx-auto h-full w-full '

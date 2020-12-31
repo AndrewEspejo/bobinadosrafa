@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next';
+import { Link as ScrollLink } from 'react-scroll';
+import Typical from 'react-typical';
 
 export const Banner = () => {
   const [active, setActive] = useState(false);
@@ -8,7 +10,7 @@ export const Banner = () => {
     setActive(!active);
   };
   return (
-    <div className='body'>
+    <div className='body' id='home'>
       <div className='big-image'>
         <div className='overlay'>
           <div className='flex flex-col justify-between h-full'>
@@ -34,34 +36,42 @@ export const Banner = () => {
                   />
                 </svg>
               </button>
-              {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+
               <div
                 className={`${
                   active ? '' : 'hidden'
                 }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
               >
                 <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-                  <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
-                    Home
-                  </a>
+                  <ScrollLink to='home' smooth={true}>
+                    <div className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-thin items-center justify-center hover:bg-gray-600 hover:text-white '>
+                      Inicio
+                    </div>
+                  </ScrollLink>
 
-                  <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                    Services
-                  </a>
+                  <ScrollLink to='aboutus' smooth={true}>
+                    <div className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-thin items-center justify-center hover:bg-gray-600 hover:text-white'>
+                      Nosotros
+                    </div>
+                  </ScrollLink>
 
-                  <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                    About us
-                  </a>
+                  <ScrollLink to='services' smooth={true}>
+                    <div className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-thin items-center justify-center hover:bg-gray-600 hover:text-white'>
+                      Servicios
+                    </div>
+                  </ScrollLink>
 
-                  <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                    Contact us
-                  </a>
+                  <ScrollLink to='contact' smooth={true}>
+                    <div className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-thin items-center justify-center hover:bg-gray-600 hover:text-white'>
+                      Contáctanos
+                    </div>
+                  </ScrollLink>
                 </div>
               </div>
             </div>
             <div className='flex-grow flex flex-col justify-center items-center'>
               <h1 className='text-white text-4xl lg:text-8xl font-thin pb-4 '>
-                Electrobinados Rafa
+                Electrobobinados Rafa
               </h1>
             </div>
           </div>

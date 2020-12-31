@@ -13,38 +13,37 @@ export const Services = () => {
     obtainServices();
   }, []);
   return (
-    <div className='body '>
+    <div className='body ' id='services'>
       <div className='big-image3'>
         <div
-          className='absolute mx-auto h-screen flex flex-col justify-between w-full  pl-5 pr-8'
+          className='absolute mx-auto h-screen flex flex-col justify-between w-full  lg:pl-5 lg:pr-8'
           style={{ background: 'rgba(0, 0, 0, 0.65)' }}
         >
           <div>
-            <h1 className='text-white text-center pt-16 text-4xl font-serif'>
+            <h1 className='text-white text-center iphone6:pt-2 text-2xl lg:pt-16 iphone8p:text-4xl font-serif '>
               Servicios
             </h1>
           </div>
-          <div className='grid lg:grid-cols-3 grid-cols-1 md:gap-4 place-items-center flex-grow pb-3'>
+          <div className='grid lg:grid-cols-3 grid-cols-1 md:gap-4 place-items-center flex-grow  iphone6:gap-4 pb-9'>
             {services ? (
               services.map((option) => (
                 <div
-                  className='flex md:flex-col flex-row items-center  bg-white text-gray-800 h-48 md:h-3/4 md:w-3/4 w-11/12 rounded-lg'
+                  className='flex md:flex-col flex-row items-center  bg-white text-gray-800 iphone8p:h-48 md:h-3/4 md:w-3/4 h-44  w-11/12 rounded-lg'
                   key={option.id}
                 >
                   <img
                     src={option.image[0].name}
                     alt=''
-                    className='md:w-full md:h-72 h-full w-36 bg-center rounded-md'
+                    className='md:w-full md:h-72 h-full iphone8p:w-40 w-32 bg-center rounded-md'
                   />
-                  <div className='pt-10 h-64 text-center'>
-                    <h1 className='md:pb-10 text-xl font-bold'>
+                  <div className='pt-10 lg:pt-5 h-64 flex flex-col items-center justify-around'>
+                    <h1 className='md:pb-10 lg:text-xl text-md lg:pb-4 font-bold'>
                       {option.title}
                     </h1>
-                    <ul>
-                      <li className='md:text-md text-xs'>
-                        {option.descripcion}
-                      </li>
-                    </ul>
+
+                    <p className='md:text-md text-xs lg:text-base flex-grow px-2 lg:px-3'>
+                      {option.descripcion}
+                    </p>
                   </div>
                 </div>
               ))
