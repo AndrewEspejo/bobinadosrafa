@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Electrobobinados Rafa</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Banner />

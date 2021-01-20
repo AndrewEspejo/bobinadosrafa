@@ -41,7 +41,7 @@ export const Services = () => {
                       {option.title}
                     </h1>
 
-                    <p className='md:text-md text-xs lg:text-base flex-grow px-2 lg:px-3'>
+                    <p className='md:text-md text-xs lg:text-base flex-grow px-2 lg:px-3 lg:pt-3'>
                       {option.descripcion}
                     </p>
                   </div>
